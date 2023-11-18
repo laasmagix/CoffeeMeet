@@ -121,6 +121,10 @@ body {
 }
 .page__main-block {
 }
+.page__catalog {
+}
+.page__coffee {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -153,6 +157,7 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  transition: all 0.3s ease;
 }
 .header__language:hover {
   color: #c7a17a;
@@ -421,8 +426,6 @@ body {
 }
 /* ================================================================================ */
 /* ======================================== Coffee ======================================== */
-.page__coffee {
-}
 .coffee {
   padding-top: 100px;
   padding-bottom: 80px;
@@ -513,6 +516,110 @@ body {
   }
   .coffee__text {
     font-size: 16px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Catalog ======================================== */
+.catalog {
+  padding-bottom: 80px;
+}
+.catalog__container {
+}
+.catalog__title {
+  display: inline-block;
+  color: #fff;
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 144%; /* 57.6px */
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+}
+.catalog__row {
+}
+.catalog__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+}
+.catalog__item {
+  padding: 20px;
+  border-radius: 10px;
+  background: #14141d;
+  transition: all 0.3s ease;
+}
+.catalog__item:hover {
+  background-color: #22222f;
+}
+.item-catalog {
+}
+.item-catalog__image {
+  display: flex;
+  justify-content: center;
+}
+.item-catalog__image img {
+}
+.item-catalog__image:not(:last-child) {
+  margin: 0px 0px 42px 0px;
+}
+.item-catalog__body {
+}
+.item-catalog__name {
+  color: #fff;
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.item-catalog__name:hover {
+  text-decoration: underline;
+}
+.item-catalog__name:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
+.item-catalog_prices {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.item-catalog__price {
+  color: #fff;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.item-catalog__price_line {
+  color: #818181;
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+}
+.item-catalog__icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+}
+@media (max-width: 1025px) {
+  .catalog {
+    padding-bottom: 60px;
+  }
+  .catalog__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .catalog {
+    padding-bottom: 30px;
+  }
+  .catalog__items {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /* ================================================================================ */
