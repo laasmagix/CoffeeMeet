@@ -125,6 +125,8 @@ body {
 }
 .page__coffee {
 }
+.page__news {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -620,6 +622,102 @@ body {
   }
   .catalog__items {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ================================================================================ */
+/* ======================================== News ======================================== */
+.news {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #14141d;
+}
+.news__container {
+}
+.news__title {
+  color: #fff;
+  font-family: Jost;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 144%; /* 57.6px */
+  text-transform: uppercase;
+  margin: 0px 0px 40px 0px;
+}
+.news__body {
+  /* max-width: 1200px;
+  margin: 0px auto; */
+}
+.news__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 21px;
+}
+.news__column {
+}
+.news__item {
+}
+.item-news {
+  border-radius: 0px 0px 10px 10px;
+  background: #14141d;
+}
+.item-news__image {
+  max-width: 100%;
+  flex: 0 0 386px;
+}
+.item-news__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+.item-news__image {
+}
+.item-news__body {
+  padding: 21px;
+}
+.item-news__title {
+  color: #fff;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.item-news__title:not(:last-child) {
+  margin: 0px 0px 13px 0px;
+}
+.item-news__text {
+  color: #dfdfdf;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 344px;
+}
+@media (min-width: 767.98px) {
+  .news__column {
+    display: flex;
+  }
+}
+@media (max-width: 972px) {
+  .news {
+    padding-bottom: 50px;
+  }
+  .news__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .item-news__text {
+    max-width: none;
+  }
+}
+@media (max-width: 767.98px) {
+  .news {
+    padding-bottom: 30px;
+  }
+  .news__row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item-news__image {
+    height: 70%;
   }
 }
 /* ================================================================================ */
