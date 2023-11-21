@@ -129,7 +129,8 @@ body {
 }
 .page__card {
 }
-
+.page__decription {
+}
 /* ================================================================================ */
 /* ======================================== Header ======================================== */
 .header {
@@ -1001,6 +1002,40 @@ body {
 @media (max-width: 450.98px) {
   .card__title {
     font-size: 24px;
+  }
+}
+/* ================================================================================ */
+/* ======================================== Description ======================================== */
+.description {
+  padding-bottom: 80px;
+}
+.description__container {
+}
+.description__title {
+  color: #fff;
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 144%; /* 34.56px */
+  text-transform: uppercase;
+  margin: 0px 0px 32px 0px;
+}
+.description__item {
+  border-radius: 10px;
+  background: #14141d;
+  padding: 30px;
+}
+.description__text {
+  color: #dfdfdf;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 767.98px) {
+  .description {
+    padding-bottom: 30px;
   }
 }
 /* ================================================================================ */
